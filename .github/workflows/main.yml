@@ -1,0 +1,17 @@
+
+name: First GitHub Actions Workflow
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display success message
+        run: echo "GitHub Actions is working successfully!"
+
+      - name: Display date
+        run: date
